@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Redirecionador de Artigo Medium",
+  "version": "1.0",
+  "description": "Mostra um popup de redirecionamento num artigo específico do Medium.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.medium.com/*",
+        "https://medium.com/*"
+      ],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
